@@ -3,145 +3,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gospodarstwo U Adiego i Zosi</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      font-family: "Georgia", serif;
+      font-family: 'Playfair Display', serif;
       background-color: #fefcf9;
       color: #4b3e2e;
       margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #e7d8b1;
-      padding: 20px;
-      text-align: center;
     }
     header img {
       max-height: 120px;
-    }/* Hamburger menu */
-#menu-toggle {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  background-color: #e7d8b1;
-  color: #4b3e2e;
-  padding: 12px 20px;
-  font-size: 28px;
-  cursor: pointer;
-  text-align: right;
-}
-
-.mobile-menu {
-  display: none;
-  background-color: #fff8e1;
-  padding: 10px 20px;
-}
-
-.mobile-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.mobile-menu li {
-  margin: 10px 0;
-}
-
-.mobile-menu a {
-  text-decoration: none;
-  color: #4b3e2e;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-  #menu-toggle:checked + .menu-icon + .mobile-menu {
-    display: block;
-  }
-}
-
-main {
-  padding: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-section {
-  margin-bottom: 40px;
-}
-h1, h2, h3 {
-  color: #5c452a;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #fffaf2;
-}
-table, th, td {
-  border: 1px solid #c5b18c;
-}
-th, td {
-  padding: 12px;
-  text-align: left;
-}
-footer {
-  background-color: #e7d8b1;
-  text-align: center;
-  padding: 20px;
-}
-.gallery {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.gallery img {
-  width: 48%;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
+      margin: auto;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
   </style>
 </head>
-<body>
-  <header>
+<body class="text-lg">
+  <header class="bg-amber-100 p-6 text-center shadow-md sticky top-0 z-50">
     <img src="logo.png" alt="Logo Gospodarstwa">
-    <h1>Nasza farma – Wasze zdrowie</h1>
-  </header>  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">&#9776;</label>
-  <nav class="mobile-menu">
-    <ul>
-      <li><a href="#gospodarstwo">O nas</a></li>
-      <li><a href="#zwierzeta">Zwierzęta</a></li>
-      <li><a href="#produkty">Produkty</a></li>
-      <li><a href="#cennik">Cennik</a></li>
-      <li><a href="#plany">Plany</a></li>
-      <li><a href="#galeria">Galeria</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
-    </ul>
-  </nav>  <main>
-    <section id="gospodarstwo">
-      <h2>Poznaj gospodarstwo "U Adiego i Zosi"</h2>
-      <p>Rodzinne gospodarstwo ekologiczne z Dąbrowy Górniczej. Hodujemy zwierzęta z poszanowaniem ich dobrostanu, a naszym priorytetem jest zdrowie i naturalność.</p>
-      <p><strong>Lokalizacja:</strong> ul. Białej Przemszy 100, Dąbrowa Górnicza<br>
+    <h1 class="text-2xl md:text-4xl font-bold mt-2">Nasza farma – Wasze zdrowie</h1>
+    <button id="hamburger" class="md:hidden text-2xl mt-4">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav id="navMenu" class="hidden md:flex gap-6 justify-center mt-4">
+      <a href="#o-nas" class="hover:underline">O nas</a>
+      <a href="#zwierzeta" class="hover:underline">Zwierzęta</a>
+      <a href="#produkty" class="hover:underline">Produkty</a>
+      <a href="#cennik" class="hover:underline">Cennik</a>
+      <a href="#kontakt" class="hover:underline">Kontakt</a>
+    </nav>
+  </header>
+  <main class="max-w-4xl mx-auto p-4 fade-in">
+    <section id="o-nas" class="my-10" data-aos="fade-up">
+      <h2 class="text-2xl font-bold">Poznaj gospodarstwo "U Adiego i Zosi"</h2>
+      <p class="mt-2">Rodzinne gospodarstwo ekologiczne z Dąbrowy Górniczej. Hodujemy zwierzęta z poszanowaniem ich dobrostanu, a naszym priorytetem jest zdrowie i naturalność.</p>
+      <p class="mt-2"><strong>Lokalizacja:</strong> ul. Białej Przemszy 100, Dąbrowa Górnicza<br>
       <strong>Działki:</strong> 1025/3 i 1026/3<br>
       <strong>Styl gospodarstwa:</strong> Rustykalny, rodzinny, ekologiczny</p>
-    </section><section id="zwierzeta">
-  <h2>Nasze zwierzęta (docelowe ilości):</h2>
-  <ul>
-    <li>🐰 Króliki kalifornijskie — 60 sztuk</li>
-    <li>🐐 Kozy anglonubijskie — 20 sztuk</li>
-    <li>🐔 Kury zielononóżki — 150 sztuk</li>
-    <li>🦆 Kaczki Pekin — 80 sztuk</li>
-    <li>🐣 Strusie czarne afrykańskie — 6 dorosłych + 10 młodych</li>
+    </section><section id="zwierzeta" class="my-10" data-aos="fade-up">
+  <h2 class="text-2xl font-bold">Nasze zwierzęta (docelowe ilości):</h2>
+  <ul class="list-disc list-inside mt-4">
+    <li>Króliki kalifornijskie — 60 sztuk</li>
+    <li>Kozy anglonubijskie — 20 sztuk</li>
+    <li>Kury zielononóżki — 150 sztuk</li>
+    <li>Kaczki Pekin — 80 sztuk</li>
+    <li>Strusie czarne afrykańskie — 6 dorosłych + 10 młodych</li>
   </ul>
 </section>
 
-<section id="produkty">
-  <h2>Produkty</h2>
-  <ul>
+<section id="produkty" class="my-10" data-aos="fade-up">
+  <h2 class="text-2xl font-bold">Produkty</h2>
+  <ul class="list-disc list-inside mt-4">
     <li>Mięso królicze i kacze</li>
     <li>Jaja kurze i strusie (spożywcze i lęgowe)</li>
     <li>Mleko i sery koźle</li>
@@ -151,51 +73,57 @@ footer {
   </ul>
 </section>
 
-<section id="cennik">
-  <h2>Cennik (orientacyjny):</h2>
-  <table>
-    <tr><th>Produkt</th><th>Cena detaliczna</th></tr>
-    <tr><td>Mięso królicze (kg)</td><td>45 zł</td></tr>
-    <tr><td>Mięso kacze (kg)</td><td>40 zł</td></tr>
-    <tr><td>Mleko kozie (litr)</td><td>8 zł</td></tr>
-    <tr><td>Ser kozi dojrzewający (kg)</td><td>65 zł</td></tr>
-    <tr><td>Jajo kurze</td><td>1,20 zł</td></tr>
-    <tr><td>Jajo strusie</td><td>80–120 zł</td></tr>
-    <tr><td>Kosmetyki (mydła, kremy)</td><td>15–40 zł</td></tr>
-    <tr><td>Pisklęta zielononóżki</td><td>12 zł/szt.</td></tr>
-  </table>
-</section>
-
-<section id="plany">
-  <h2>Plany rozwoju</h2>
-  <ul>
-    <li>Własna przetwórnia</li>
-    <li>Eksport wybranych produktów</li>
-    <li>Agroturystyka rodzinna</li>
-    <li>Sprzedaż internetowa i wysyłka</li>
-    <li>Edukacja i atrakcje dla dzieci</li>
-    <li>Mapka 3D gospodarstwa</li>
-  </ul>
-</section>
-
-<section id="galeria">
-  <h2>Galeria</h2>
-  <div class="gallery">
-    <img src="mapka3D.png" alt="Mapka 3D">
-    <img src="gospodarstwo.jpg" alt="Zdjęcie gospodarstwa">
+<section id="cennik" class="my-10" data-aos="fade-up">
+  <h2 class="text-2xl font-bold">Cennik (orientacyjny):</h2>
+  <div class="overflow-x-auto">
+    <table class="table-auto w-full mt-4 bg-white shadow-md rounded">
+      <thead class="bg-amber-200">
+        <tr>
+          <th class="p-2 text-left">Produkt</th>
+          <th class="p-2 text-left">Cena detaliczna</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="p-2">Mięso królicze (kg)</td><td class="p-2">45 zł</td></tr>
+        <tr><td class="p-2">Mięso kacze (kg)</td><td class="p-2">40 zł</td></tr>
+        <tr><td class="p-2">Mleko kozie (litr)</td><td class="p-2">8 zł</td></tr>
+        <tr><td class="p-2">Ser kozi dojrzewający (kg)</td><td class="p-2">65 zł</td></tr>
+        <tr><td class="p-2">Jajo kurze</td><td class="p-2">1,20 zł</td></tr>
+        <tr><td class="p-2">Jajo strusie</td><td class="p-2">80–120 zł</td></tr>
+        <tr><td class="p-2">Kosmetyki (mydła, kremy)</td><td class="p-2">15–40 zł</td></tr>
+        <tr><td class="p-2">Pisklęta zielononóżki</td><td class="p-2">12 zł/szt.</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
-<section id="kontakt">
-  <h2>Kontakt</h2>
-  <p><strong>Adrian Jasiński</strong> – właściciel<br>
-  📧 kontakt@uadiegiozosi.pl<br>
-  🌐 https://adiegoizosi.github.io/adiegiozosi.github.io/</p>
+<section class="my-10" data-aos="fade-up">
+  <h2 class="text-2xl font-bold">Galeria</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+    <img src="mapka3D.png" alt="Mapka 3D" class="rounded-lg shadow">
+    <img src="gospodarstwo.jpg" alt="Zdjęcie gospodarstwa" class="rounded-lg shadow">
+  </div>
+</section>
+
+<section id="kontakt" class="my-10" data-aos="fade-up">
+  <h2 class="text-2xl font-bold">Kontakt</h2>
+  <p class="mt-2"><strong>Adrian Jasiński</strong> – właściciel<br>
+    📧 kontakt@uadiegiozosi.pl<br>
+    🌐 <a href="https://adiegoizosi.github.io/adiegiozosi.github.io/" class="text-blue-600 underline">adiegoizosi.github.io</a>
+  </p>
 </section>
 
   </main>
-  <footer>
-    <p>Do zobaczenia na naszej farmie! 🐓🦙🦆🐐🐰</p>
-  </footer>
-</body>
+  <footer class="bg-amber-100 text-center p-6 mt-10">
+    <p class="text-xl">Do zobaczenia na naszej farmie! 🐓🦙🦆🐐🐰</p>
+  </footer>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>AOS.init();</script>  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+      navMenu.classList.toggle('flex');
+      navMenu.classList.toggle('flex-col');
+    });
+  </script></body>
 </html>
