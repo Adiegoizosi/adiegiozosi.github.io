@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gospodarstwo U Adiego i Zosi</title>
   <style>
     body {
@@ -11,52 +11,117 @@
       color: #4b3e2e;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
+
     header {
       background-color: #e7d8b1;
       padding: 20px;
       text-align: center;
     }
+
     header img {
-      max-height: 120px;
+      max-height: 100px;
+      width: auto;
     }
+
     main {
-      padding: 40px;
+      padding: 20px;
       max-width: 1000px;
       margin: 0 auto;
     }
+
     section {
       margin-bottom: 40px;
     }
+
     h1, h2, h3 {
       color: #5c452a;
+      margin-top: 0;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
       background-color: #fffaf2;
     }
+
     table, th, td {
       border: 1px solid #c5b18c;
     }
+
     th, td {
       padding: 12px;
       text-align: left;
     }
+
     footer {
       background-color: #e7d8b1;
       text-align: center;
       padding: 20px;
     }
+
     .gallery {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
+      justify-content: center;
     }
+
     .gallery img {
-      width: 48%;
+      width: 100%;
+      max-width: 480px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px;
+      }
+
+      header img {
+        max-height: 80px;
+      }
+
+      main {
+        padding: 15px;
+      }
+
+      th, td {
+        font-size: 14px;
+        padding: 8px;
+      }
+
+      .gallery img {
+        width: 100%;
+      }
+
+      footer {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      table, th, td {
+        font-size: 13px;
+      }
+
+      ul {
+        padding-left: 15px;
+      }
     }
   </style>
 </head>
@@ -65,17 +130,18 @@
     <img src="logo.png" alt="Logo Gospodarstwa">
     <h1>Nasza farma – Wasze zdrowie</h1>
   </header>
+
   <main>
     <section>
       <h2>Poznaj gospodarstwo "U Adiego i Zosi"</h2>
       <p>Rodzinne gospodarstwo ekologiczne z Dąbrowy Górniczej. Hodujemy zwierzęta z poszanowaniem ich dobrostanu, a naszym priorytetem jest zdrowie i naturalność.</p>
       <p><strong>Lokalizacja:</strong> ul. Białej Przemszy 100, Dąbrowa Górnicza<br>
       <strong>Działki:</strong> 1025/3 i 1026/3<br>
-      <strong>Styl gospodarstwa:</strong> Rustykalny, rodzinny, ekologiczny</p>
+      <strong>Styl:</strong> Rustykalny, rodzinny, ekologiczny</p>
     </section>
 
     <section>
-      <h2>Nasze zwierzęta (docelowe ilości):</h2>
+      <h2>Nasze zwierzęta (docelowe ilości)</h2>
       <ul>
         <li>🐰 Króliki kalifornijskie — 60 sztuk</li>
         <li>🐐 Kozy anglonubijskie — 20 sztuk</li>
@@ -98,7 +164,7 @@
     </section>
 
     <section>
-      <h2>Cennik (orientacyjny):</h2>
+      <h2>Cennik (orientacyjny)</h2>
       <table>
         <tr><th>Produkt</th><th>Cena detaliczna</th></tr>
         <tr><td>Mięso królicze (kg)</td><td>45 zł</td></tr>
@@ -136,12 +202,12 @@
       <h2>Kontakt</h2>
       <p><strong>Adrian Jasiński</strong> – właściciel<br>
       📧 kontakt@uadiegiozosi.pl<br>
-      🌐 https://adiegoizosi.github.io/adiegiozosi.github.io/</p>
+      🌐 <a href="https://adiegoizosi.github.io/adiegiozosi.github.io/">Strona internetowa</a></p>
     </section>
   </main>
+
   <footer>
     <p>Do zobaczenia na naszej farmie! 🐓🦙🦆🐐🐰</p>
   </footer>
 </body>
 </html>
-
