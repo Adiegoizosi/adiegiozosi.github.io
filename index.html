@@ -4,96 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gospodarstwo U Adiego i Zosi</title>
-  <style>
-    body {
-      font-family: "Georgia", serif;
-      background-color: #fefcf9;
-      color: #4b3e2e;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #e7d8b1;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      max-height: 120px;
-    }
-    nav {
-      background-color: #d2bb91;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 10px;
-    }
-    nav a {
-      color: #4b3e2e;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 10px 20px;
-      background-color: #f3e6c1;
-      border-radius: 10px;
-      transition: background-color 0.3s;
-    }
-    nav a:hover {
-      background-color: #e0cfa0;
-    }
-    main {
-      padding: 40px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h1, h2, h3 {
-      color: #5c452a;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: #fffaf2;
-    }
-    table, th, td {
-      border: 1px solid #c5b18c;
-    }
-    th, td {
-      padding: 12px;
-      text-align: left;
-    }
-    .gallery, .animal-photos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .gallery img, .animal-photos img {
-      width: 30%;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      object-fit: cover;
-    }
-    footer {
-      background-color: #e7d8b1;
-      text-align: center;
-      padding: 20px;
-    }
-    .news-section {
-      background-color: #f3e6c1;
-      border-left: 6px solid #b89c64;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .news-section ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .news-section li::before {
-      content: "📰 ";
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -102,24 +13,16 @@
   </header>
 
   <nav>
-    <a href="#o-nas">O nas</a>
-    <a href="#zwierzeta">Nasze zwierzęta</a>
-    <a href="#produkty">Produkty</a>
-    <a href="#cennik">Cennik</a>
-    <a href="#galeria">Galeria</a>
-    <a href="#kontakt">Kontakt</a>
+    <a href="index.html">Strona Główna</a>
+    <a href="onas.html">O nas</a>
+    <a href="zwierzeta.html">Nasze zwierzęta</a>
+    <a href="produkty.html">Produkty</a>
+    <a href="cennik.html">Cennik</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="kontakt.html">Kontakt</a>
   </nav>
 
   <main>
-    <section class="news-section" id="aktualnosci">
-      <h2>Nowości z farmy</h2>
-      <ul>
-        <li><strong>Kwiecień 2025:</strong> Rozpoczynamy sezon wiosenny! 🐣 Mamy już pierwsze pisklęta zielononóżki oraz świeże mleko od naszych kóz!</li>
-        <li><strong>Marzec 2025:</strong> Nowość! Naturalne mydła na bazie mleka koziego już dostępne w sprzedaży.</li>
-        <li><strong>Luty 2025:</strong> Przygotowujemy zagrodę dla młodych strusi – odwiedźcie nas w weekendy!</li>
-      </ul>
-    </section>
-
     <section class="animal-photos">
       <img src="https://images.unsplash.com/photo-1603349206290-9e0373b09c7b" alt="Królik">
       <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" alt="Koza">
@@ -127,78 +30,6 @@
       <img src="https://images.unsplash.com/photo-1584270354949-1bede7f44a29" alt="Kaczka">
       <img src="https://images.unsplash.com/photo-1602524201080-9121b9fcde7a" alt="Struś">
       <img src="https://images.unsplash.com/photo-1602524087018-9b8049d1c3f1" alt="Strusie w stadzie">
-    </section>
-
-    <section id="o-nas">
-      <h2>Poznaj gospodarstwo "U Adiego i Zosi"</h2>
-      <p>Rodzinne gospodarstwo ekologiczne z Dąbrowy Górniczej. Hodujemy zwierzęta z poszanowaniem ich dobrostanu, a naszym priorytetem jest zdrowie i naturalność.</p>
-      <p><strong>Lokalizacja:</strong> ul. Białej Przemszy 100, Dąbrowa Górnicza<br>
-      <strong>Działki:</strong> 1025/3 i 1026/3<br>
-      <strong>Styl gospodarstwa:</strong> Rustykalny, rodzinny, ekologiczny</p>
-    </section>
-
-    <section id="zwierzeta">
-      <h2>Nasze zwierzęta</h2>
-      <ul>
-        <li>🐰 Króliki kalifornijskie</li>
-        <li>🐐 Kozy anglonubijskie</li>
-        <li>🐔 Kury zielononóżki</li>
-        <li>🦆 Kaczki Pekin</li>
-        <li>🐣 Strusie czarne afrykańskie</li>
-      </ul>
-      <div class="animal-photos">
-        <img src="https://images.unsplash.com/photo-1603349206290-9e0373b09c7b" alt="Królik">
-        <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" alt="Koza">
-        <img src="https://images.unsplash.com/photo-1598515213690-4980a8c47c2f" alt="Kura">
-        <img src="https://images.unsplash.com/photo-1584270354949-1bede7f44a29" alt="Kaczka">
-        <img src="https://images.unsplash.com/photo-1602524201080-9121b9fcde7a" alt="Struś">
-      </div>
-    </section>
-
-    <section id="produkty">
-      <h2>Produkty</h2>
-      <ul>
-        <li>Mięso królicze i kacze</li>
-        <li>Jaja kurze i strusie (spożywcze i lęgowe)</li>
-        <li>Mleko i sery koźle</li>
-        <li>Kosmetyki naturalne (na bazie mleka koziego)</li>
-        <li>Pióra i futro królicze</li>
-        <li>Pisklęta i młode zwierzęta</li>
-      </ul>
-    </section>
-
-    <section id="cennik">
-      <h2>Cennik (orientacyjny):</h2>
-      <table>
-        <tr><th>Produkt</th><th>Cena detaliczna</th></tr>
-        <tr><td>Mięso królicze (kg)</td><td>45 zł</td></tr>
-        <tr><td>Mięso kacze (kg)</td><td>40 zł</td></tr>
-        <tr><td>Mleko kozie (litr)</td><td>8 zł</td></tr>
-        <tr><td>Ser kozi dojrzewający (kg)</td><td>65 zł</td></tr>
-        <tr><td>Jajo kurze</td><td>1,20 zł</td></tr>
-        <tr><td>Jajo strusie</td><td>80–120 zł</td></tr>
-        <tr><td>Kosmetyki (mydła, kremy)</td><td>15–40 zł</td></tr>
-        <tr><td>Pisklęta zielononóżki</td><td>12 zł/szt.</td></tr>
-      </table>
-    </section>
-
-    <section id="galeria">
-      <h2>Galeria</h2>
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1603349206290-9e0373b09c7b" alt="Królik">
-        <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" alt="Koza">
-        <img src="https://images.unsplash.com/photo-1598515213690-4980a8c47c2f" alt="Kura">
-        <img src="https://images.unsplash.com/photo-1584270354949-1bede7f44a29" alt="Kaczka">
-        <img src="https://images.unsplash.com/photo-1602524201080-9121b9fcde7a" alt="Struś">
-        <img src="https://images.unsplash.com/photo-1602524087018-9b8049d1c3f1" alt="Strusie w stadzie">
-      </div>
-    </section>
-
-    <section id="kontakt">
-      <h2>Kontakt</h2>
-      <p><strong>Adrian Jasiński</strong> – właściciel<br>
-      📧 kontakt@uadiegoizosi.pl<br>
-      🌐 <a href="https://adiegoizosi.github.io/adiegiozosi.github.io/">Nasza strona GitHub</a></p>
     </section>
   </main>
 
