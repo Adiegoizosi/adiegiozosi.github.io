@@ -1,79 +1,63 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gospodarstwo U Adiego i Zosi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>U Adiego i Zosi – Nasza farma</title>
   <style>
     body {
-      font-family: "Georgia", serif;
-      background-color: #fefcf9;
-      color: #4b3e2e;
+      font-family: 'Georgia', serif;
+      background-color: #f9f2e7;
+      color: #3e2f1c;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
     header {
-      background-color: #e7d8b1;
       padding: 20px;
-      text-align: center;
     }
-    header img {
-      max-height: 120px;
+    img.logo {
+      width: 250px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 0.5em;
+    }
+    h2 {
+      font-size: 1.2em;
+      font-weight: normal;
+      color: #6c4e32;
+      margin-bottom: 1em;
     }
     main {
-      padding: 40px;
-      max-width: 1000px;
+      max-width: 800px;
       margin: 0 auto;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h1, h2, h3 {
-      color: #5c452a;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: #fffaf2;
-    }
-    table, th, td {
-      border: 1px solid #c5b18c;
-    }
-    th, td {
-      padding: 12px;
-      text-align: left;
-    }
-    footer {
-      background-color: #e7d8b1;
-      text-align: center;
       padding: 20px;
     }
-    .gallery {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .gallery img {
-      width: 48%;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    .box {
+      background-color: #fff9ee;
+      border: 1px solid #e3caa5;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="attachment:file-QKprbe3C9kTgHiuccQuybn" alt="Logo Gospodarstwa">
-    <h1>Nasza farma – Wasze zdrowie</h1>
+    <img src="logo.png" alt="Logo U Adiego i Zosi" class="logo">
+    <h1>U Adiego i Zosi</h1>
+    <h2>Nasza farma – wasze zdrowie</h2>
   </header>
   <main>
-    <section>
-      <h2>Poznaj gospodarstwo "U Adiego i Zosi"</h2>
-      <p>Rodzinne gospodarstwo ekologiczne z Dąbrowy Górniczej. Hodujemy zwierzęta z poszanowaniem ich dobrostanu, a naszym priorytetem jest zdrowie i naturalność.</p>
-      <p><strong>Lokalizacja:</strong> ul. Białej Przemszy 100, Dąbrowa Górnicza<br>
-      <strong>Działki:</strong> 1025/3 i 1026/3<br>
-      <strong>Styl gospodarstwa:</strong> Rustykalny, rodzinny, ekologiczny</p>
-    </section>
-
+    <div class="box">
+      <p>Witamy na naszej ekologicznej farmie rodzinnej!</p>
+      <p>Hodujemy króliki kalifornijskie, kozy anglonubijskie, kury zielononóżki, kaczki Pekin i strusie afrykańskie.</p>
+      <p>Oferujemy mięso, mleko, sery, jaja, pisklęta, kosmetyki, jaja strusie i pióra – wszystko z pasją i zgodnie z naturą.</p>
+      <p>Znajdziesz nas w Dąbrowie Górniczej, przy ul. Białej Przemszy 100.</p>
+    </div>
     <section>
       <h2>Nasze zwierzęta (docelowe ilości):</h2>
       <ul>
@@ -112,35 +96,6 @@
       </table>
     </section>
 
-    <section>
-      <h2>Plany rozwoju</h2>
-      <ul>
-        <li>Własna przetwórnia</li>
-        <li>Eksport wybranych produktów</li>
-        <li>Agroturystyka rodzinna</li>
-        <li>Sprzedaż internetowa i wysyłka</li>
-        <li>Edukacja i atrakcje dla dzieci</li>
-        <li>Mapka 3D gospodarstwa</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Galeria</h2>
-      <div class="gallery">
-        <img src="attachment:file_00000000a77c51f8bc570516b628eee0" alt="Mapka 3D">
-        <img src="attachment:file-AL996NxnYLuoB6g3hL9tkh" alt="Zdjęcie gospodarstwa">
-      </div>
-    </section>
-
-    <section>
-      <h2>Kontakt</h2>
-      <p><strong>Adrian Jasiński</strong> – właściciel<br>
-      📧 kontakt@uadiegiozosi.pl<br>
-      🌐 www.uadiegiozosi.pl</p>
-    </section>
   </main>
-  <footer>
-    <p>Do zobaczenia na naszej farmie! 🐓🦙🦆🐐🐰</p>
-  </footer>
 </body>
 </html>
