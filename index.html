@@ -1,129 +1,100 @@
-<!DOCTYPE html><html lang="pl">
+<!DOCTYPE html>
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gospodarstwo U Adiego i Zosi</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Poznaj gospodarstwo "U Adiego i Zosi"</title>
   <style>
     body {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Georgia', serif;
       background-color: #fefcf9;
-      color: #4b3e2e;
       margin: 0;
+      color: #4b3e2e;
+    }
+    header {
+      background-color: #e7d8b1;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header img {
-      max-height: 120px;
+      max-height: 100px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav button {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #fff7e0;
+      padding: 10px;
+      border-top: 1px solid #d3ba8d;
+    }
+    .menu a {
+      text-decoration: none;
+      color: #5c452a;
+      margin: 8px 0;
+      font-weight: bold;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 800px;
       margin: auto;
     }
-    .fade-in {
-      animation: fadeIn 2s ease-in;
+    h1, h2 {
+      color: #5c452a;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    footer {
+      background-color: #e7d8b1;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
 </head>
-<body class="text-lg">
-  <header class="bg-amber-100 p-6 text-center shadow-md sticky top-0 z-50">
+<body>
+  <header>
     <img src="logo.png" alt="Logo Gospodarstwa">
-    <h1 class="text-2xl md:text-4xl font-bold mt-2">Nasza farma – Wasze zdrowie</h1>
-    <button id="hamburger" class="md:hidden text-2xl mt-4">
-      <i class="fas fa-bars"></i>
-    </button>
-    <nav id="navMenu" class="hidden md:flex gap-6 justify-center mt-4">
-      <a href="#o-nas" class="hover:underline">O nas</a>
-      <a href="#zwierzeta" class="hover:underline">Zwierzęta</a>
-      <a href="#produkty" class="hover:underline">Produkty</a>
-      <a href="#cennik" class="hover:underline">Cennik</a>
-      <a href="#kontakt" class="hover:underline">Kontakt</a>
+    <h1>Nasza farma – Wasze zdrowie</h1>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <div id="menu" class="menu">
+        <a href="index.html">Strona główna</a>
+        <a href="zwierzeta.html">Nasze zwierzęta</a>
+        <a href="produkty.html">Produkty</a>
+        <a href="cennik.html">Cennik</a>
+        <a href="plany.html">Plany rozwoju</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
     </nav>
   </header>
-  <main class="max-w-4xl mx-auto p-4 fade-in">
-    <section id="o-nas" class="my-10" data-aos="fade-up">
-      <h2 class="text-2xl font-bold">Poznaj gospodarstwo "U Adiego i Zosi"</h2>
-      <p class="mt-2">Rodzinne gospodarstwo ekologiczne z Dąbrowy Górniczej. Hodujemy zwierzęta z poszanowaniem ich dobrostanu, a naszym priorytetem jest zdrowie i naturalność.</p>
-      <p class="mt-2"><strong>Lokalizacja:</strong> ul. Białej Przemszy 100, Dąbrowa Górnicza<br>
-      <strong>Działki:</strong> 1025/3 i 1026/3<br>
-      <strong>Styl gospodarstwa:</strong> Rustykalny, rodzinny, ekologiczny</p>
-    </section><section id="zwierzeta" class="my-10" data-aos="fade-up">
-  <h2 class="text-2xl font-bold">Nasze zwierzęta (docelowe ilości):</h2>
-  <ul class="list-disc list-inside mt-4">
-    <li>Króliki kalifornijskie — 60 sztuk</li>
-    <li>Kozy anglonubijskie — 20 sztuk</li>
-    <li>Kury zielononóżki — 150 sztuk</li>
-    <li>Kaczki Pekin — 80 sztuk</li>
-    <li>Strusie czarne afrykańskie — 6 dorosłych + 10 młodych</li>
-  </ul>
-</section>
 
-<section id="produkty" class="my-10" data-aos="fade-up">
-  <h2 class="text-2xl font-bold">Produkty</h2>
-  <ul class="list-disc list-inside mt-4">
-    <li>Mięso królicze i kacze</li>
-    <li>Jaja kurze i strusie (spożywcze i lęgowe)</li>
-    <li>Mleko i sery koźle</li>
-    <li>Kosmetyki naturalne (na bazie mleka koziego)</li>
-    <li>Pióra i futro królicze</li>
-    <li>Pisklęta i młode zwierzęta</li>
-  </ul>
-</section>
-
-<section id="cennik" class="my-10" data-aos="fade-up">
-  <h2 class="text-2xl font-bold">Cennik (orientacyjny):</h2>
-  <div class="overflow-x-auto">
-    <table class="table-auto w-full mt-4 bg-white shadow-md rounded">
-      <thead class="bg-amber-200">
-        <tr>
-          <th class="p-2 text-left">Produkt</th>
-          <th class="p-2 text-left">Cena detaliczna</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="p-2">Mięso królicze (kg)</td><td class="p-2">45 zł</td></tr>
-        <tr><td class="p-2">Mięso kacze (kg)</td><td class="p-2">40 zł</td></tr>
-        <tr><td class="p-2">Mleko kozie (litr)</td><td class="p-2">8 zł</td></tr>
-        <tr><td class="p-2">Ser kozi dojrzewający (kg)</td><td class="p-2">65 zł</td></tr>
-        <tr><td class="p-2">Jajo kurze</td><td class="p-2">1,20 zł</td></tr>
-        <tr><td class="p-2">Jajo strusie</td><td class="p-2">80–120 zł</td></tr>
-        <tr><td class="p-2">Kosmetyki (mydła, kremy)</td><td class="p-2">15–40 zł</td></tr>
-        <tr><td class="p-2">Pisklęta zielononóżki</td><td class="p-2">12 zł/szt.</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="my-10" data-aos="fade-up">
-  <h2 class="text-2xl font-bold">Galeria</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-    <img src="mapka3D.png" alt="Mapka 3D" class="rounded-lg shadow">
-    <img src="gospodarstwo.jpg" alt="Zdjęcie gospodarstwa" class="rounded-lg shadow">
-  </div>
-</section>
-
-<section id="kontakt" class="my-10" data-aos="fade-up">
-  <h2 class="text-2xl font-bold">Kontakt</h2>
-  <p class="mt-2"><strong>Adrian Jasiński</strong> – właściciel<br>
-    📧 kontakt@uadiegiozosi.pl<br>
-    🌐 <a href="https://adiegoizosi.github.io/adiegiozosi.github.io/" class="text-blue-600 underline">adiegoizosi.github.io</a>
-  </p>
-</section>
-
+  <main>
+    <h2>Poznaj gospodarstwo "U Adiego i Zosi"</h2>
+    <p>Witamy w naszym rodzinnym, ekologicznym gospodarstwie w Dąbrowie Górniczej. Naszą pasją są zwierzęta, natura i zdrowa żywność. Stawiamy na jakość, dobrostan i tradycję.</p>
+    <p><strong>Lokalizacja:</strong> ul. Białej Przemszy 100, Dąbrowa Górnicza</p>
+    <p><strong>Działki:</strong> 1025/3 i 1026/3</p>
+    <p><strong>Styl:</strong> Rustykalny, rodzinny, ekologiczny</p>
+    <p><strong>Odwiedź nas i poznaj świat zwierząt, zdrowych produktów i wiejskiego życia!</strong></p>
   </main>
-  <footer class="bg-amber-100 text-center p-6 mt-10">
-    <p class="text-xl">Do zobaczenia na naszej farmie! 🐓🦙🦆🐐🐰</p>
-  </footer>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>AOS.init();</script>  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
 
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('hidden');
-      navMenu.classList.toggle('flex');
-      navMenu.classList.toggle('flex-col');
-    });
-  </script></body>
+  <footer>
+    <p>Do zobaczenia na naszej farmie! "U Adiego i Zosi"</p>
+  </footer>
+</body>
 </html>
