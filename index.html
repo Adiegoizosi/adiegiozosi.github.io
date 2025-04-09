@@ -1,100 +1,176 @@
-<!DOCTYPE html>
-<html lang="pl">
+<!DOCTYPE html><html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poznaj gospodarstwo "U Adiego i Zosi"</title>
+  <title>Gospodarstwo U Adiego i Zosi</title>
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Georgia', serif;
+      font-family: "Georgia", serif;
       background-color: #fefcf9;
-      margin: 0;
       color: #4b3e2e;
+      margin: 0;
+      padding: 0;
     }
     header {
       background-color: #e7d8b1;
       padding: 20px;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
     header img {
-      max-height: 100px;
-    }
-    nav {
-      margin-top: 10px;
-    }
-    nav button {
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
-    .menu {
-      display: none;
-      flex-direction: column;
-      background-color: #fff7e0;
-      padding: 10px;
-      border-top: 1px solid #d3ba8d;
-    }
-    .menu a {
-      text-decoration: none;
-      color: #5c452a;
-      margin: 8px 0;
-      font-weight: bold;
+      max-height: 120px;
     }
     main {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
+      padding: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    h1, h2 {
+    section {
+      margin-bottom: 40px;
+    }
+    h1, h2, h3 {
       color: #5c452a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fffaf2;
+    }
+    table, th, td {
+      border: 1px solid #c5b18c;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
     }
     footer {
       background-color: #e7d8b1;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+    }
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .gallery a {
+      width: 48%;
+      display: block;
+      animation: fadeIn 1s ease-in;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-    }
-  </script>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Logo Gospodarstwa">
     <h1>Nasza farma – Wasze zdrowie</h1>
-    <nav>
-      <button onclick="toggleMenu()">&#9776;</button>
-      <div id="menu" class="menu">
-        <a href="index.html">Strona główna</a>
-        <a href="zwierzeta.html">Nasze zwierzęta</a>
-        <a href="produkty.html">Produkty</a>
-        <a href="cennik.html">Cennik</a>
-        <a href="plany.html">Plany rozwoju</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="kontakt.html">Kontakt</a>
-      </div>
-    </nav>
   </header>
-
   <main>
-    <h2>Poznaj gospodarstwo "U Adiego i Zosi"</h2>
-    <p>Witamy w naszym rodzinnym, ekologicznym gospodarstwie w Dąbrowie Górniczej. Naszą pasją są zwierzęta, natura i zdrowa żywność. Stawiamy na jakość, dobrostan i tradycję.</p>
-    <p><strong>Lokalizacja:</strong> ul. Białej Przemszy 100, Dąbrowa Górnicza</p>
-    <p><strong>Działki:</strong> 1025/3 i 1026/3</p>
-    <p><strong>Styl:</strong> Rustykalny, rodzinny, ekologiczny</p>
-    <p><strong>Odwiedź nas i poznaj świat zwierząt, zdrowych produktów i wiejskiego życia!</strong></p>
-  </main>
+    <section>
+      <h2>Poznaj gospodarstwo "U Adiego i Zosi"</h2>
+      <p>Rodzinne gospodarstwo ekologiczne z Dąbrowy Górniczej. Hodujemy zwierzęta z poszanowaniem ich dobrostanu, a naszym priorytetem jest zdrowie i naturalność.</p>
+      <p><strong>Lokalizacja:</strong> ul. Białej Przemszy 100, Dąbrowa Górnicza<br>
+      <strong>Działki:</strong> 1025/3 i 1026/3<br>
+      <strong>Styl gospodarstwa:</strong> Rustykalny, rodzinny, ekologiczny</p>
+      <div class="gallery">
+        <a href="https://placehold.co/800x600/aaa/fff?text=Króliki" data-lightbox="start" data-title="Króliki kalifornijskie">
+          <img src="https://placehold.co/400x300/aaa/fff?text=Króliki" alt="Króliki">
+        </a>
+        <a href="https://placehold.co/800x600/bbb/fff?text=Kozy" data-lightbox="start" data-title="Kozy anglonubijskie">
+          <img src="https://placehold.co/400x300/bbb/fff?text=Kozy" alt="Kozy">
+        </a>
+        <a href="https://placehold.co/800x600/ccc/fff?text=Kury" data-lightbox="start" data-title="Kury zielononóżki">
+          <img src="https://placehold.co/400x300/ccc/fff?text=Kury" alt="Kury">
+        </a>
+        <a href="https://placehold.co/800x600/ddd/fff?text=Kaczki" data-lightbox="start" data-title="Kaczki Pekin">
+          <img src="https://placehold.co/400x300/ddd/fff?text=Kaczki" alt="Kaczki">
+        </a>
+        <a href="https://placehold.co/800x600/eee/fff?text=Strusie" data-lightbox="start" data-title="Strusie afrykańskie">
+          <img src="https://placehold.co/400x300/eee/fff?text=Strusie" alt="Strusie">
+        </a>
+      </div>
+    </section><section>
+  <h2>Nasze zwierzęta (docelowe ilości):</h2>
+  <ul>
+    <li>🐰 Króliki kalifornijskie — 60 sztuk</li>
+    <li>🐐 Kozy anglonubijskie — 20 sztuk</li>
+    <li>🐔 Kury zielononóżki — 150 sztuk</li>
+    <li>🦆 Kaczki Pekin — 80 sztuk</li>
+    <li>🐣 Strusie czarne afrykańskie — 6 dorosłych + 10 młodych</li>
+  </ul>
+</section>
 
+<section>
+  <h2>Produkty</h2>
+  <ul>
+    <li>Mięso królicze i kacze</li>
+    <li>Jaja kurze i strusie (spożywcze i lęgowe)</li>
+    <li>Mleko i sery koźle</li>
+    <li>Kosmetyki naturalne (na bazie mleka koziego)</li>
+    <li>Pióra i futro królicze</li>
+    <li>Pisklęta i młode zwierzęta</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Cennik (orientacyjny):</h2>
+  <table>
+    <tr><th>Produkt</th><th>Cena detaliczna</th></tr>
+    <tr><td>Mięso królicze (kg)</td><td>45 zł</td></tr>
+    <tr><td>Mięso kacze (kg)</td><td>40 zł</td></tr>
+    <tr><td>Mleko kozie (litr)</td><td>8 zł</td></tr>
+    <tr><td>Ser kozi dojrzewający (kg)</td><td>65 zł</td></tr>
+    <tr><td>Jajo kurze</td><td>1,20 zł</td></tr>
+    <tr><td>Jajo strusie</td><td>80–120 zł</td></tr>
+    <tr><td>Kosmetyki (mydła, kremy)</td><td>15–40 zł</td></tr>
+    <tr><td>Pisklęta zielononóżki</td><td>12 zł/szt.</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Plany rozwoju</h2>
+  <ul>
+    <li>Własna przetwórnia</li>
+    <li>Eksport wybranych produktów</li>
+    <li>Agroturystyka rodzinna</li>
+    <li>Sprzedaż internetowa i wysyłka</li>
+    <li>Edukacja i atrakcje dla dzieci</li>
+    <li>Mapka 3D gospodarstwa</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Galeria</h2>
+  <div class="gallery">
+    <a href="mapka3D.png" data-lightbox="galeria" data-title="Mapka 3D">
+      <img src="mapka3D.png" alt="Mapka 3D">
+    </a>
+    <a href="gospodarstwo.jpg" data-lightbox="galeria" data-title="Gospodarstwo">
+      <img src="gospodarstwo.jpg" alt="Zdjęcie gospodarstwa">
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2>Kontakt</h2>
+  <p><strong>Adrian Jasiński</strong> – właściciel<br>
+  📧 kontakt@uadiegiozosi.pl<br>
+  🌐 <a href="https://adiegoizosi.github.io/adiegiozosi.github.io/">Nasza strona na GitHub Pages</a></p>
+</section>
+
+  </main>
   <footer>
-    <p>Do zobaczenia na naszej farmie! "U Adiego i Zosi"</p>
+    <p>Do zobaczenia na naszej farmie! 🐓🦙🦆🐐🐰</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 </body>
 </html>
