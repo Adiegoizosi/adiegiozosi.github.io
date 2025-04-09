@@ -1,6 +1,17 @@
 /* style.css dla "U Adiego i Zosi" */
 
-body { font-family: 'Georgia', serif; background-color: #fefcf9; color: #4b3e2e; margin: 0; padding: 0; }
+body {
+  font-family: "Georgia", serif;
+  background-image: url("recznie-rysowane-wiejskie-budynki-krajobraz-ilustracji-wektorowych-gospodarstwo-z-pola-stodoly-elewator-zbozowy-i-tr_167715-2038.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #3b2f2f;
+  margin: 0;
+  padding: 0;
+}
+}background-color: #fefcf9; color: #4b3e2e; margin: 0; padding: 0; }
 
 header { background-color: #e7d8b1; padding: 20px; text-align: center; }
 
