@@ -1,62 +1,22 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>Kontakt – U Adiego i Zosi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img src="img/Logo.png" alt="Logo Gospodarstwa" class="logo" />
-    <h1>Nasza farma – Wasze zdrowie</h1>
-  </header>
-
-  <nav>
-    <a href="index.html">Strona główna</a>
-    <a href="o-nas.html">O nas</a>
-    <a href="zwierzeta.html">Nasze zwierzęta</a>
-    <a href="produkty.html">Produkty</a>
-    <a href="cennik.html">Cennik</a>
-    <a href="galeria.html">Galeria</a>
-  </nav>
+  <div id="header-placeholder"></div>
 
   <main>
     <h2>Kontakt</h2>
-    <section class="contact-info">
-      <p><strong>Gospodarstwo „U Adiego i Zosi”</strong></p>
-      <p>ul. Białej Przemszy 100<br>
-      41-300 Dąbrowa Górnicza</p>
-      <p>Email: kontakt@uadiegiozosi.pl</p>
-      <p>Telefon: +48 123 456 789</p>
-    </section>
-
-    <section class="contact-form">
-      <h3>Wyślij wiadomość</h3>
-      <form action="#" method="post">
-        <label for="name">Imię:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Wiadomość:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Wyślij</button>
-      </form>
-    </section>
-
-    <section class="map">
-      <h3>Znajdź nas</h3>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.7082264972827!2d19.2618165!3d50.3165945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d9ec89a43d3f%3A0x2b2859b48e0c050d!2sBia%C5%82ej%20Przemszy%20100%2C%2041-303%20D%C4%85browa%20G%C3%B3rnicza!5e0!3m2!1spl!2spl!4v1712688000000"
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
-    </section>
+    <p>Gospodarstwo "U Adiego i Zosi"</p>
+    <p>ul. Białej Przemszy 100, Dąbrowa Górnicza</p>
+    <p>Email: kontakt@uadiegoizosi.pl</p>
+    <p>Telefon: 123-456-789</p>
   </main>
 
-  <footer>
-    <p>Dziękujemy za odwiedziny – zapraszamy na farmę!</p>
-  </footer>
+  <script src="load-header.js"></script>
 </body>
 </html>
