@@ -3,19 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>O nas</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>O nas – U Adiego i Zosi</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div id="header-placeholder"></div>
 
-  <main>
+  <main class="content">
     <section>
       <h2>O nas</h2>
-      <p>Jesteśmy rodzinnym gospodarstwem ekologicznym „U Adiego i Zosi”, z pasją prowadzimy hodowlę zwierząt i oferujemy zdrowe produkty prosto z natury.</p>
+      <p>Jesteśmy rodzinnym gospodarstwem ekologicznym z Dąbrowy Górniczej. Specjalizujemy się w hodowli królików kalifornijskich, kóz anglonubijskich, kur zielononóżek, kaczek Pekin oraz strusi czarnych afrykańskich. Dbamy o jakość, dobrostan zwierząt i zdrowie naszych klientów.</p>
+      <p>Działamy pod hasłem <strong>„Nasza farma – Wasze zdrowie”</strong>. Oferujemy mięso, mleko, sery, jaja, pisklęta, kosmetyki, futro królicze, jaja strusie oraz pióra. Wszystko zgodnie z naturą i zasadami zrównoważonego rolnictwa.</p>
     </section>
   </main>
 
-  <script src="load-header.js"></script>
+  <footer>
+    <p>Do zobaczenia na naszej farmie! 🐓🦆🐐🐰</p>
+  </footer>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+  </script>
 </body>
 </html>
