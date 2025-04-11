@@ -79,6 +79,28 @@ nav a:hover {
 .gallery img:hover {
   transform: scale(1.05);
 }
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.price-list h2 {
+  margin-top: 2rem;
+  color: #6a9c6a;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.price-list ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+.price-list li {
+  margin: 0.5rem 0;
+}
 
 /* Stopka */
 footer {
