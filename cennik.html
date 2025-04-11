@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Produkty</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Cennik – U Adiego i Zosi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="header-placeholder"></div>
+  <!-- Nagłówek -->
+  <div id="header-container"></div>
 
-  <main>
-    <h2>Nasze produkty</h2>
-    <ul>
-      <li>Mięso królicze, kurze, kacze i strusie</li>
-      <li>Mleko kozie i sery</li>
-      <li>Jaja kurze i strusie</li>
-      <li>Kosmetyki na bazie mleka</li>
-      <li>Pióra i futerka</li>
-    </ul>
+  <main class="content">
+    <h1>Cennik produktów</h1>
+
+    <section class="price-list">
+      <h2>Mięso i produkty zwierzęce</h2>
+      <ul>
+        <li>Królik kalifornijski – 55 zł/kg</li>
+        <li>Królik burgundzki – 60 zł/kg</li>
+        <li>Jaja kurze (zielononóżki) – 1,20 zł/szt.</li>
+        <li>Jaja kacze (pekin) – 1,50 zł/szt.</li>
+        <li>Jaja strusie – 60 zł/szt. (konsumpcyjne)</li>
+        <li>Mięso strusie – 130 zł/kg</li>
+      </ul>
+
+      <h2>Nabiał i kosmetyki</h2>
+      <ul>
+        <li>Mleko kozie – 7 zł/litr</li>
+        <li>Ser kozi dojrzewający – 20 zł/200g</li>
+        <li>Krem kozi do ciała – 28 zł/słoik</li>
+      </ul>
+
+      <h2>Inne</h2>
+      <ul>
+        <li>Pióra strusie – 5 zł/szt.</li>
+        <li>Futro królicze – od 20 zł/szt.</li>
+        <li>Pisklęta (kurczaki/kaczki) – 12–18 zł/szt.</li>
+      </ul>
+    </section>
   </main>
 
-  <script src="load-header.js"></script>
+  <footer>
+    &copy; 2025 Gospodarstwo "U Adiego i Zosi" – Wszystkie prawa zastrzeżone
+  </footer>
+
+  <script>
+    // Wczytanie nagłówka z header.html
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
