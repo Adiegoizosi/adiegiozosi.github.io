@@ -1,19 +1,33 @@
-<!DOCTYPE html><html lang="pl">
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>O nas - U Adiego i Zosi</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Wspólny nagłówek -->
-  <div id="header"></div>  <main>
-    <section>
+  <div id="header-placeholder"></div>
+
+  <main>
+    <section class="content">
       <h2>O nas</h2>
-      <p>Nasze gospodarstwo rodzinne "U Adiego i Zosi" położone jest w Dąbrowie Górniczej. Zajmujemy się ekologiczną hodowlą zwierząt i produkcją zdrowej żywności. Naszym celem jest oferowanie wysokiej jakości produktów prosto z natury – od mleka i jaj po mięso, mydła i jaja strusie.</p>
-      <p>Zapraszamy do odwiedzin oraz zakupów bezpośrednio w naszym gospodarstwie!</p>
+      <p>Gospodarstwo „U Adiego i Zosi” to rodzinne miejsce, w którym natura, pasja i zdrowie idą w parze. Znajdujemy się w Dąbrowie Górniczej i specjalizujemy się w ekologicznej hodowli zwierząt, przetwórstwie oraz sprzedaży bezpośredniej.</p>
+      <p>Nasze główne zwierzęta to króliki kalifornijskie, kozy anglonubijskie, kury zielononóżki, kaczki Pekin i strusie czarne afrykańskie.</p>
+      <p>Zapraszamy do odwiedzin i poznania nas osobiście!</p>
     </section>
-  </main>  <footer>
-    <p>Do zobaczenia na naszej farmie!</p>
-  </footer>  <script src="scripts/include-header.js"></script></body>
+  </main>
+
+  <footer>
+    <p>Do zobaczenia na naszej farmie! 🐓🦙🦆🐐🐰</p>
+  </footer>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+  </script>
+</body>
 </html>
