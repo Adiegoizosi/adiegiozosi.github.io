@@ -1,50 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
-  font-family: 'Pacifico', cursive;
-}
-/* Reset stylów */
-* {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Styl ogólny */
-body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Pacifico', cursive;
   background-color: #faf6f0;
   color: #333;
-  line-height: 1.6;
 }
 
-/* Nagłówek */
 header {
   background-color: #fff;
+  padding: 1rem;
   text-align: center;
-  padding: 1rem 0;
   border-bottom: 2px solid #ddd;
 }
 
-header img.Logo {
-  width: 200px;
+.Logo {
+  width: 120px;
   height: auto;
-  margin-bottom: 5px;
+  display: block;
+  margin: 0 auto 10px auto;
 }
 
-/* Nawigacja */
 nav {
   background-color: #8fbc8f;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0.5rem 0;
-  gap: 1rem;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
+  margin: 0 1rem;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease;
 }
@@ -54,64 +42,19 @@ nav a:hover {
   border-radius: 5px;
 }
 
-/* Sekcja główna z dużym zdjęciem */
 .main-photo img {
   width: 100%;
   height: auto;
+  display: block;
   max-height: 80vh;
   object-fit: cover;
   margin-top: 10px;
 }
 
-/* Galeria */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.gallery img {
-  width: 280px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-.content {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-}
-
-.price-list h2 {
-  margin-top: 2rem;
-  color: #6a9c6a;
-  font-size: 1.3rem;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.5rem;
-}
-
-.price-list ul {
-  list-style-type: square;
-  padding-left: 1.5rem;
-}
-
-.price-list li {
-  margin: 0.5rem 0;
-}
-
-/* Stopka */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #eee;
-  font-size: 0.9rem;
   margin-top: 2rem;
+  font-size: 0.9rem;
 }
